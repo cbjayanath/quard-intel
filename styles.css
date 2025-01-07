@@ -527,10 +527,13 @@ body {
   display: flex;
   flex: 2;
   gap: 2rem;
+  margin-right: 150px;
+  
 }
 
 .footer-links>div {
   flex: 1;
+  
 }
 
 .footer-links h3 {
@@ -560,6 +563,7 @@ body {
 .footer-links form input {
   padding: 0.5rem;
   flex: 1;
+  border-radius: 5px;
 }
 
 .footer-links form button {
@@ -568,6 +572,8 @@ body {
   color: #fff;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
+  width: 80px;
 }
 
 .payment-methods img {
@@ -579,8 +585,37 @@ body {
   margin-top: 2rem;
   text-align: center;
   font-size: 0.9rem;
+  border-top: 1px solid #ccc; 
+  padding-top: 10px; 
+  justify-content: space-between; 
+  align-items: center;          
+}
+.footer-description {
+  font-size: 0.9rem; 
+  color: #555;
+  margin-bottom: 1rem;
+}
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 50px;
 }
 
+.social-icons a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0077b5; 
+}
+.footer-bottom img {
+ margin-left: 900px;
+ margin-top: -20px;
+  
+}
 /* RESPONSIVE DESIGN */
 @media (max-width: 992px) {
   .product-main {
@@ -596,6 +631,9 @@ body {
   }
 }
 
+.footer-bottom p {
+  text-align: left; 
+}
 @media (max-width: 768px) {
   .header-top {
     flex-direction: column;
@@ -633,5 +671,6 @@ body {
 
   .footer-top {
     flex-direction: column;
+    justify-content: flex-start;
   }
 }
