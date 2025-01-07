@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>My-Ecom | iPhone 14 Pro</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-top">
+      <div class="logo">My-Ecom</div>
+      <div class="search-box">
+        <img src="assets/search.png" alt="Search" class="search-icon" />
+        <input type="text" placeholder="Search for products..." />
+      </div>
+      <nav class="top-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="icons/heart.png" alt="Favorites" class="nav-icon" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="icons/cart.png" alt="Cart" class="nav-icon" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="icons/user.png" alt="User" class="nav-icon" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="category-menu">
+      <ul>
+        <li>
+          <a href="#">
+            <img src="icons/Phones.png" alt="Phones" class="nav-icon" />
+            Phones
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="icons/Computers.png" alt="Computers" class="nav-icon" />
+            Computers
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="icons/Gaming.png" alt="Smart Watches" class="nav-icon" />
+            Smart Watches
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="icons/Cameras.png" alt="Cameras" class="nav-icon" />
+            Cameras
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="icons/Headphones.png" alt="Headphones" class="nav-icon" />
+            Headphones
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="icons/Gaming.png" alt="Gaming" class="nav-icon" />
+            Gaming
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="breadcrumb">
+    <a href="#">Home</a> &gt;
+    <a href="#">Category</a> &gt;
+    <a href="#">Smartphones</a> &gt;
+    <a href="#">Apple</a> &gt;
+    <span>iPhone 14 Pro Max</span>
+  </div>
+
+  <main class="container">
+    <section class="product-main">
+      <div class="product-images">
+        <div class="product-thumbnails">
+          <img src="assets/img-02.png" alt="Side Image 1" />
+          <img src="assets/img-02.png" alt="Side Image 2" />
+          <img src="assets/img-02.png" alt="Side Image 3" />
+          <img src="assets/img-02.png" alt="Side Image 4" />
+        </div>
+        <div class="product-main-image">
+          <img src="assets/img-01.png" alt="iPhone 14 Pro" />
+        </div>
+      </div>
+
+      <div class="product-details">
+        <h1>Apple iPhone 14 Pro Max</h1>
+        <div class="rating-and-sales">
+          <span class="stars">★★★★☆</span>
+          <span class="sold">200+ sold</span>
+        </div>
+        <div class="price">$1399.00</div>
+        <p class="short-description">
+          Enhanced capabilities thanks to an enlarged display of 6.7 inches and work
+          without recharging throughout the day. Incredible photos in weak, yes and
+          in bright lighting, the new system with two cameras ...
+        </p>
+
+        <!-- Color selection -->
+        <div class="color-selection">
+          <h3>Select color:</h3>
+          <div class="colors">
+            <label>
+              <input type="radio" name="color" value="purple" checked />
+              <span class="color-swatch" style="background-color: #6f42c1;"></span>
+            </label>
+            <label>
+              <input type="radio" name="color" value="black" />
+              <span class="color-swatch" style="background-color: #333;"></span>
+            </label>
+            <label>
+              <input type="radio" name="color" value="red" />
+              <span class="color-swatch" style="background-color: #e00;"></span>
+            </label>
+            <label>
+              <input type="radio" name="color" value="white" />
+              <span class="color-swatch" style="background-color: #fff; border:1px solid #ccc;"></span>
+            </label>
+            <label>
+              <input type="radio" name="color" value="gold" />
+              <span class="color-swatch" style="background-color: gold;"></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Storage selection -->
+        <div class="storage-selection">
+          <h3>Select storage:</h3>
+          <div class="storages">
+            <label>
+              <input type="radio" name="storage" value="128" checked />
+              <span>128GB</span>
+            </label>
+            <label>
+              <input type="radio" name="storage" value="256" />
+              <span>256GB</span>
+            </label>
+            <label>
+              <input type="radio" name="storage" value="512" />
+              <span>512GB</span>
+            </label>
+            <label>
+              <input type="radio" name="storage" value="1tb" />
+              <span>1TB</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Quantity -->
+        <div class="quantity">
+          <h3>Quantity:</h3>
+          <div class="qty-box">
+            <button class="qty-btn" onclick="decreaseQty()">-</button>
+            <input type="number" id="qty-input" value="1" min="1" readonly />
+            <button class="qty-btn" onclick="increaseQty()">+</button>
+          </div>
+          <span class="stock-info">50 available / 200 sold</span>
+        </div>
+
+
+        <!-- Action buttons -->
+        <div class="actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+
+        <!-- Delivery info -->
+        <div class="delivery-info">
+          <div class="info-block">
+            <span class="info-icon">🚚</span>
+            <p>Free Delivery <br /> 1-2 day</p>
+          </div>
+          <div class="info-block">
+            <span class="info-icon">✔️</span>
+            <p>In Stock <br /> Today</p>
+          </div>
+          <div class="info-block">
+            <span class="info-icon">🛡️</span>
+            <p>Guaranteed <br /> 1 year</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT TABS (with fixed/min height to avoid jumping) -->
+    <section class="product-tabs">
+      <!-- TABS NAV -->
+      <nav class="tabs-nav">
+        <ul>
+          <li class="active" data-tab="details">Product Details</li>
+          <li data-tab="additional-info">Additional Information</li>
+          <li data-tab="shipping-returns">Shipping & Returns</li>
+          <li data-tab="reviews">Review (100)</li>
+        </ul>
+      </nav>
+
+
+      <div class="tab-contents-wrapper">
+        <!-- 1. Product Details -->
+        <div class="tab-content" id="details">
+          <h2>Details</h2>
+          <p>
+            Just as a book is judged by its cover, the first thing you notice when you pick up a
+            modern smartphone is the display. Nothing surprising, because advanced technologies
+            allow you to practically level the display frames and cutouts for the front camera
+            and speaker...
+          </p>
+
+          <table>
+            <tr>
+              <th>Screen diagonal</th>
+              <td>6.7"</td>
+            </tr>
+            <tr>
+              <th>The screen resolution</th>
+              <td>2796x1290</td>
+            </tr>
+            <tr>
+              <th>The screen refresh rate</th>
+              <td>120 Hz</td>
+            </tr>
+            <tr>
+              <th>The pixel density</th>
+              <td>460 ppi</td>
+            </tr>
+            <tr>
+              <th>Screen type</th>
+              <td>OLED</td>
+            </tr>
+            <tr>
+              <th>Additionally</th>
+              <td>Dynamic Island, Always-On display, HDR display, True Tone, Wide color (P3)</td>
+            </tr>
+            <tr>
+              <th>CPU</th>
+              <td>A16 Bionic</td>
+            </tr>
+            <tr>
+              <th>Number of cores</th>
+              <td>6</td>
+            </tr>
+          </table>
+
+          <button class="view-more">View More</button>
+        </div>
+
+        <!-- 2. Additional Information -->
+        <div class="tab-content" id="additional-info">
+          <h2>Additional Information</h2>
+          <p>
+            Here you can find more specific and technical details about the product,
+            such as dimensions, weight, compatible accessories, and available colors.
+            Please refer to the official specification sheet for comprehensive data.
+          </p>
+          <ul>
+            <li>Dimensions: 146.7 x 71.5 x 7.4 mm</li>
+            <li>Weight: 189 g</li>
+            <li>SIM: Dual SIM (Nano-SIM, dual stand-by)</li>
+            <li>Water Resistance: IP68 rating</li>
+          </ul>
+        </div>
+
+        <!-- 3. Shipping & Returns -->
+        <div class="tab-content" id="shipping-returns">
+          <h2>Shipping & Returns</h2>
+          <p>
+            We offer free shipping on all orders over $50. Orders are processed within 24 hours
+            and typically arrive within 2-5 business days, depending on your location.
+          </p>
+          <p>
+            If you are not completely satisfied with your purchase, you may return or exchange
+            it within 30 days of receipt. Please ensure the product is in its original packaging
+            and condition.
+          </p>
+        </div>
+
+        <!-- 4. Reviews -->
+        <div class="tab-content" id="reviews">
+          <h2>Customer Reviews</h2>
+          <p>
+            Read what other customers have to say about the Apple iPhone 14 Pro. Share your own
+            feedback and photos to help others make informed buying decisions.
+          </p>
+
+          <div class="review-item">
+            <strong>John Doe</strong> - <em>5 stars</em>
+            <p>Amazing camera quality and battery life. Totally worth the upgrade!</p>
+          </div>
+          <div class="review-item">
+            <strong>Jane Smith</strong> - <em>4 stars</em>
+            <p>Love the new design, but wish it came with a faster charger in the box.</p>
+          </div>
+          <div class="review-item">
+            <strong>Chris W.</strong> - <em>5 stars</em>
+            <p>Top-notch performance, I'm impressed with the speed and display brightness.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-about">
+        <h2>My-Ecom</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.
+        </p>
+        <div class="social-icons">
+          <a href="#">Fb</a>
+          <a href="#">Tw</a>
+          <a href="#">Ig</a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h3>COMPANY</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>HELP</h3>
+          <ul>
+            <li><a href="#">Customer Support</a></li>
+            <li><a href="#">Delivery Details</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>FAQ</h3>
+          <ul>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Manage Deliveries</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Payments</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>SUBSCRIBE US</h3>
+          <form>
+            <input type="email" placeholder="example@email.com" />
+            <button type="submit">Sign Up</button>
+          </form>
+          <div class="payment-methods">
+            <img src="https://via.placeholder.com/40x25?text=Visa" alt="Visa" />
+            <img src="https://via.placeholder.com/40x25?text=PayPal" alt="PayPal" />
+            <img src="https://via.placeholder.com/40x25?text=ApplePay" alt="ApplePay" />
+            <img src="https://via.placeholder.com/40x25?text=GPay" alt="GPay" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>My-Ecom © 2025, All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
